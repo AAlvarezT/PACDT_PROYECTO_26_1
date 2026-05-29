@@ -1,0 +1,36 @@
+
+---
+
+# ───────── core ─────────
+numpy>=1.24
+pandas>=2.0
+tqdm>=4.66
+joblib>=1.4
+requests>=2.31
+urllib3>=2.2
+beautifulsoup4>=4.12
+lxml>=4.9
+
+# ───────── web-scraping ─────────
+selenium>=4.20          # Chrome / ChromeDriver
+opencv-python-headless>=4.10
+pillow>=10.0            # PIL
+
+# ───────── ML / DL ─────────
+torch>=2.2
+torchvision>=0.17
+facenet-pytorch>=2.5
+sentence-transformers>=2.7
+scikit-learn>=1.4
+tqdm-joblib>=0.0.7      # progress bars inside GridSearchCV
+
+# ───────── geo ─────────
+geopandas>=0.14
+shapely>=2.0
+fiona>=1.9
+pyproj>=3.6
+
+# ───────── visualisation ─────────
+matplotlib>=3.8
+plotly>=5.22
+kaleido>=0.2            # static export engine for Plotly
