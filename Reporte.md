@@ -3,8 +3,8 @@
 
 **Integrantes:**
 - [Jose Carlos Salinas] — [jc.salinasma@alum.up.edu.pe]
-- [Arturo Alvarez de la Torre] — [aa.alvarez....@alum.up.edu.pe]
-- [Gianella Mayra Silvestre Nina] — [gm.silvestreni@alum.up.edu.pe]
+- [Arturo Alvarez de la Torre] — [a.alvarezdelatorres@alum.up.edu.pe]
+- [Gianella Mayra Silvestre Nina] — [gm.silvestren@alum.up.edu.pe]
 - [Jose Luis Atto Pintado] — [jl.attop@alum.up.edu.pe]
 - [Alyssa Antuanette Trujillo Cruzado] — [aa.trujillocr@alum.up.edu.pe]
 ---
