@@ -8,6 +8,7 @@
 - [Jose Luis Atto Pintado] — [jl.attop@alum.up.edu.pe]
 - [Alyssa Antuanette Trujillo Cruzado] — [aa.trujillocr@alum.up.edu.pe]
 ---
+El objetivo de este proyecto es desarrollar un dashboard exploratorio en Streamlit para analizar patrones demográficos, temporales, geográficos y textuales en reportes de personas desaparecidas en Perú, utilizando datos del sistema RENIPED.
 
 ## 1. Dataset: RENIPED
 
@@ -116,3 +117,18 @@ Todos los filtros del sidebar afectan en tiempo real al conjunto de datos visual
 ### 3.4 Pestaña "Texto"
 
 **Nube de palabras:** generada sobre las columnas de texto libre del dataset. En `Circunstancias` los términos más frecuentes revelan los contextos más comunes de desaparición. En `Vestimenta` permiten construir un perfil rápido de la indumentaria reportada. El usuario puede alternar entre columnas desde el sidebar.
+
+## 4. Resultados Preliminares
+
+Para obtener hallazgos iniciales, se revisaron tres escenarios dentro del dashboard: una vista general con personas de 0 a 100 años, una vista de menores de edad entre 0 y 17 años, y una vista de adultos entre 18 y 100 años. Esta comparación permite observar cómo cambian los indicadores principales según el rango etario seleccionado.
+
+En la vista general, se registran 3,768 casos. De ellos, el 22.9% corresponde a personas reportadas como aparecidas y el 77.1% figura como no aparecida dentro de la base analizada. Además, los menores de 18 años representan el 53.3% de los registros, lo que evidencia una presencia importante de población menor de edad en los reportes de desaparición.
+
+Al comparar los grupos etarios, se observa que los menores concentran 2,008 casos, mientras que los adultos registran 1,760 casos. La proporción de personas aparecidas es similar en ambos grupos: 23.3% en menores y 22.4% en adultos. Sin embargo, sí se aprecia una diferencia en el tiempo hasta la denuncia: en menores, la mediana es de 18.5 horas, mientras que en adultos aumenta a 27.7 horas. Esto sugiere, de manera descriptiva, que los casos de menores tienden a ser denunciados con mayor rapidez.
+
+En términos geográficos, Lima concentra la mayor cantidad de casos en los tres escenarios analizados. En la vista general también destacan departamentos como Cusco, Arequipa, Lambayeque, La Libertad, Junín, Puno, Huánuco, Piura y Áncash, lo que evidencia una concentración territorial marcada en determinados departamentos.
+
+Finalmente, la nube de palabras construida a partir de la variable `Circunstancias` muestra términos frecuentes como “salió”, “domicilio”, “dirección”, “casa”, “desconocido”, “paradero”, “colegio”, “menor” y “trabajo”. Estos términos permiten identificar, de manera preliminar, contextos asociados a salidas del domicilio, lugares cotidianos y situaciones en las que se desconoce el paradero de la persona.
+
+
+
