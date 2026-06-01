@@ -3,9 +3,10 @@
 
 **Integrantes:**
 - [Jose Carlos Salinas] — [jc.salinasma@alum.up.edu.pe]
-- [Nombre 2] — [correo@alum.up.edu.pe]
-- [Nombre 3] — [correo@alum.up.edu.pe]
-
+- [Arturo Alvarez de la Torre] — [aa.alvarez....@alum.up.edu.pe]
+- [Gianella Mayra Silvestre Nina] — [gn.silvestreni@alum.up.edu.pe]
+- [Jose Luis Atto Pintado] — [jl.attopi@alum.up.edu.pe]
+- [Alyssa Antuanette Trujillo Cruzado] — [aa.trujillocr@alum.up.edu.pe]
 ---
 
 ## 1. Dataset: RENIPED
