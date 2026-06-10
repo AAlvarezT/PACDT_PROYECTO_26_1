@@ -245,3 +245,52 @@ def plot_wordcloud(df: pd.DataFrame, col: str) -> plt.Figure | None:
     ax.axis("off")
     plt.tight_layout(pad=0)
     return fig
+# ---------------------------------------------------------------------------
+# G7 — Heatmap día de semana × día del mes
+# ---------------------------------------------------------------------------
+
+def plot_heatmap_temporal(df: pd.DataFrame) -> go.Figure:
+    """
+    Heatmap de casos por día de la semana (eje Y) vs día del mes (eje X),
+    usando Fecha Hecho. Revela patrones temporales en las desapariciones.
+    """
+    data = df.dropna(subset=["Fecha Hecho"]).copy()
+
+    if data.empty:
+        return go.Figure().update_layout(title="Sin datos para el heatmap")
+
+    data["dia_semana"] = data["Fecha Hecho"].dt.dayofweek   
+    data["dia_mes"]    = data["Fecha Hecho"].dt.day          
+
+    pivot = (
+        data.groupby(["dia_semana", "dia_mes"])
+        .size()
+        .reset_index(name="casos")
+        .pivot(index="dia_semana", columns="dia_mes", values="casos")
+        .reindex(index=range(7), columns=range(1, 32))
+        .fillna(0)
+    )
+
+    dias = ["Lunes", "Martes", "Miércoles", "Jueves",
+            "Viernes", "Sábado", "Domingo"]
+
+    fig = go.Figure(go.Heatmap(
+        z=pivot.values,
+        x=list(range(1, 32)),
+        y=dias,
+        colorscale="Blues",
+        hoverongaps=False,
+        hovertemplate="Día %{x}, %{y}<br>Casos: %{z}<extra></extra>",
+    ))
+
+    fig.update_layout(
+        title="Casos por día de la semana y día del mes",
+        xaxis_title="Día del mes",
+        yaxis_title="Día de la semana",
+        plot_bgcolor="rgba(0,0,0,0)",
+        paper_bgcolor="rgba(0,0,0,0)",
+        font_size=13,
+        xaxis=dict(dtick=1, showgrid=False),
+        yaxis=dict(showgrid=False),
+    )
+    return fig
