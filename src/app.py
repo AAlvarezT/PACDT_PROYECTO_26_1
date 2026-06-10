@@ -20,6 +20,7 @@ from viz import (
     plot_time_series,
     plot_top_regions,
     plot_wordcloud,
+    plot_heatmap_temporal,
 )
 
 # ---------------------------------------------------------------------------
@@ -164,6 +165,7 @@ with tab_analisis:
 
     st.plotly_chart(plot_top_regions(df, n=top_n), use_container_width=True)
     st.plotly_chart(plot_map(df), use_container_width=True)
+    st.plotly_chart(plot_heatmap_temporal(df), use_container_width=True)
 
 # ── Tab 3: Texto ──────────────────────────────────────────────────────────────
 with tab_texto:
