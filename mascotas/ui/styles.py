@@ -102,7 +102,7 @@ def encabezado_marca(st, subtitulo: str = "") -> None:
     st.markdown(
         f"""
         <div class="marca">
-            <span class="nombre">Patitas</span>
+            <span class="nombre">PATITAS</span>
             <span class="lema">De vuelta a casa</span>
         </div>
         """,

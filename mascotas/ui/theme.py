@@ -12,12 +12,12 @@ ambar miel y coral, sobre un fondo color papel.
 from __future__ import annotations
 
 # Colores de marca
-PINO = "#1F6F54"        # verde principal
-PINO_OSCURO = "#15503D"
+PINO = "#782A16"        # verde principal
+PINO_OSCURO = "#502715"
 MIEL = "#E0A422"        # ambar de acento
 CORAL = "#E2674A"       # coral para alertas y estado perdido
-PAPEL = "#FBF8F1"       # fondo claro
-CREMA = "#F2EAD9"       # superficies secundarias
+PAPEL = "#D8C9A4"       # fondo claro
+CREMA = "#CDC6B7"       # superficies secundarias
 TINTA = "#2A2722"       # texto principal
 GRIS = "#6E685C"        # texto secundario
 

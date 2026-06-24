@@ -100,7 +100,7 @@ def mapa_anuncios(anuncios: list[Anuncio]):
 def pie_pagina(st) -> None:
     """Dibuja un pie discreto comun a todas las paginas."""
     st.markdown(
-        '<div class="pie">Patitas — De vuelta a casa  ·  '
-        'Proyecto academico de ciencia de datos</div>',
+        '<div class="pie">PATITAS — De vuelta a casa  ·  '
+        'Proyecto académico de ciencia de datos</div>',
         unsafe_allow_html=True,
     )

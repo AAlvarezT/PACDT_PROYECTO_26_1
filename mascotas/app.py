@@ -17,11 +17,14 @@ from ui import styles, components
 from src.services import anuncios_service, metrics_service
 from src.utils.errors import PatitasError
 
+
 st.set_page_config(
-    page_title="Patitas — De vuelta a casa",
+    page_title="PATITAS — De vuelta a casa",
     page_icon="🐾",
     layout="wide",
 )
+
+st.image("mascotas/assets/patitas_fondo.png", use_container_width=True)
 
 styles.aplicar(st)
 styles.encabezado_marca(st)
@@ -60,7 +63,7 @@ if not conexion_ok:
 st.divider()
 
 # --- Guia de uso -----------------------------------------------------------
-st.markdown("### Como funciona")
+st.markdown("### ¿Cómo funciona?")
 
 c1, c2, c3 = st.columns(3)
 with c1:
@@ -83,8 +86,8 @@ with c3:
     )
 
 st.info(
-    "Usa el menu de la izquierda para navegar entre las paginas: "
-    "Publicar, Tablon, Difundir y Analisis."
+    "Usa el menú de la izquierda para navegar entre las páginas: "
+    "Publicar, Tablon, Difundir y Análisis."
 )
 
 # --- Anuncios recientes ----------------------------------------------------
