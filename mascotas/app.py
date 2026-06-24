@@ -1,5 +1,5 @@
 """
-Patitas - Página de inicio.
+Patitas - Pagina de inicio.
 
 Punto de entrada de la aplicacion Streamlit. Presenta la plataforma,
 muestra algunos indicadores rapidos y guia al usuario hacia las demas
