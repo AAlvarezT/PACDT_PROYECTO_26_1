@@ -37,7 +37,7 @@ Fuente externa                  src/integrations/ (scraping)
 ```
 patitas/
 ├── app.py                      Pagina de inicio
-├── .env                        Credenciales (no se sube a git)
+├── .env                        Credenciales
 ├── .env.example                Plantilla de configuracion
 ├── requirements.txt
 ├── README.md
